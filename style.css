@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: solid 3px #000;
+    width: 50%;
+    height: 80vh;
+    max-height: 80vh;
+    overflow: scroll;
+}
+
+.toDo {
+    margin: 5px 2% 5px 2%;
+    width: 100%;
+    height: max-content;
+}
+
+.toDo section {
+    margin: 5px 0 5px 0;
+    border: solid 1px #000;
+    display: flex;
+
+}
+
+.tarefa {
+    width: 75%;
+    height: 20px;
+    margin: 0 2% 0 2%;
+}
+
+
+
+.botoes {
+    width: 20%;
+    display:flex;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    background-color: #999;
+}
+
+button img {
+    
+    width: 55%;
+    margin-top: 2px;
+} 
+
+input {
+    border: none;
+    width: 100%;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do-List</title>
+</head>
+
+<body>
+    <h1>To-Do-List</h1>
+    <div id="container">
+
+        <div class="toDo">
+
+            <div class="botoes">
+                <button onclick="criar()">
+                    <img src="./src/adicionar-documentos.png" alt="nova-tarefa">
+                </button>
+
+                <button onclick="concluidos()">
+                    <img src="./src/tarefa-concluida.png" alt="concluidos">
+                </button>
+            </div>
+
+            <section>
+                <div class="tarefa">
+                    <input type="text" onblur="setAttr(0)" readonly>
+                </div>
+                <div class="botoes">
+                    <button onclick="edit(0)">
+                        <img src="./src/editar-arquivo.png" alt="editar">
+                    </button>
+                    <button onclick="feito(0)">
+                        <img src="./src/trabalho-feito.png" alt="feito">
+                    </button>
+                    <button onclick="apagar(0)">
+                        <img src="./src/botao-de-deletar.png" alt="deletar">
+                    </button>
+                </div>
+            </section>
+
+            <section>
+                <div class="tarefa">
+                    <input type="text" onblur="setAttr(1)" readonly>
+                </div>
+                <div class="botoes">
+                    <button onclick="oi(1)">
+                        <img src="./src/editar-arquivo.png" alt="editar">
+                    </button>
+                    <button onclick="oi(1)">
+                        <img src="./src/trabalho-feito.png" alt="feito">
+                    </button>
+                    <button onclick="oi(1)">
+                        <img src="./src/botao-de-deletar.png" alt="deletar">
+                    </button>
+                </div>
+            </section>
+
+            <section>
+                <div class="tarefa">
+                    <input type="text" onblur="setAttr(2)" readonly>
+                </div>
+                <div class="botoes">
+                    <button onclick="edit(2)">
+                        <img src="./src/editar-arquivo.png" alt="editar">
+                    </button>
+                    <button onclick="feito(2)">
+                        <img src="./src/trabalho-feito.png" alt="feito">
+                    </button>
+                    <button onclick="apagar(2)">
+                        <img src="./src/botao-de-deletar.png" alt="deletar">
+                    </button>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="tarefa">
+                    <input type="text" onblur="setAttr(3)" readonly>
+                </div>
+                <div class="botoes">
+                    <button onclick="edit(3)">
+                        <img src="./src/editar-arquivo.png" alt="editar">
+                    </button>
+                    <button onclick="feito(3)">
+                        <img src="./src/trabalho-feito.png" alt="feito">
+                    </button>
+                    <button onclick="apagar(3)">
+                        <img src="./src/botao-de-deletar.png" alt="deletar">
+                    </button>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
