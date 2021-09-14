@@ -13,7 +13,7 @@ function feito(idx) {
 }
 
 function apagar(idx) {
-    console.log('apagar ' + idx)
+    console.log(idx.parentNode.parentElement.remove())
 }
 
 function criar() {
@@ -38,7 +38,7 @@ function criar() {
     let btnFeito = document.createElement('button')
     btnFeito.setAttribute('onclick', `feito(${index})`)
     let btnApagar = document.createElement('button')
-    btnApagar.setAttribute('onclick', `apagar(${index})`)
+    btnApagar.setAttribute('onclick', `apagar(this)`)
 
     divisaoDois.appendChild(btnEdit)
     divisaoDois.appendChild(btnFeito)
